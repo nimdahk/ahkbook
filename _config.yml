@@ -1,2 +1,4 @@
 pygments: true
-url: 'http://maul-esel.github.com/ahkbook'
+LSI: true
+permalinks: /:title
+url: 'http://nimdahk.github.com/ahkbook'
