@@ -9,10 +9,10 @@ permalink: /en/Working-with-bits.html
 Before you can use bitwise operations, you need to understand how numbers are stored in a computer's memory. The simplest form is "switches" which are either off or on. Programmers represent these as 0 and 1 (called 'bits'), respectively.
 
 ### Base 10 ###
-Binary, or Base 2, is simply another way to write numbers. In everyday life, we use Base 10. We have the Ones place, the Tens place, the Hundreds place, and so on. More technically, each digit is multiplied by 10**n, where *n* represents the distance from the right, starting from 0.(In AutoHotkey, ``**`` represents exponents or "powers") Thus, the number 647 is equivalent to ``(6 * 100) + (4 * 10) + (7 * 1)``, or ``(6 * 10**2) + (4 * 10**1) + (7 * 10**0)``. (Yes, 10**0 is 1, and this is no place to discuss why.)
+Binary, or Base 2, is simply another way to write numbers. In everyday life, we use Base 10. We have the Ones place, the Tens place, the Hundreds place, and so on. More technically, each digit is multiplied by ``10 ** n``, where *n* represents the distance from the right, starting from 0.(In AutoHotkey, ``**`` represents exponents or "powers") Thus, the number 647 is equivalent to ``(6 * 100) + (4 * 10) + (7 * 1)``, or ``(6 * 10**2) + (4 * 10**1) + (7 * 10**0)``. (Yes, ``10**0`` is 1, and this is no place to discuss why.)
 
 ### Base 2 ###
-Base 2, or "Binary," works exactly the same way. Each digit is multiplied by 2**n, where *n* is the distance from the right, starting at 0. Thus, the number 1101001 in binary is equivalent to ``(1 * 64) + (1 * 32) + (0 * 16) + (1 * 8) + (0 * 4) + (0 * 2) + (1 * 1)``. In base 10, that is 105.
+Base 2, or "Binary," works exactly the same way. Each digit is multiplied by ``2 ** n``, where *n* is the distance from the right, starting at 0. Thus, the number 1101001 in binary is equivalent to ``(1 * 64) + (1 * 32) + (0 * 16) + (1 * 8) + (0 * 4) + (0 * 2) + (1 * 1)``. In base 10, that is 105.
 
 ## Basic Operations ##
 So what is 1+1 in Binary? It's certainly not 2; binary doesn't have a 2! It's *10*, which means ``(1 * 2**1) + (0 * 2**0)``. All of the basic arithmetic operations &#8212; addition, subtraction, multiplication, and division &#8212; work in binary just as well as they do in Base 10. Because of this, there's no real reason to use them in Binary as opposed to base 10. However, there are some other operations which always pertain to Binary: the bitwise AND, the bitwise OR, the bitwise XOR, the bitwise NOT, and the bit-shifts left and right.
