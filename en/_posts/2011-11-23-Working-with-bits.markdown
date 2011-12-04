@@ -6,7 +6,6 @@ permalink: /en/Working-with-bits.html
 # Bitwise Operations #
 
 ## Understanding Binary
-Before you can use bitwise operations, you need to understand how numbers are stored in a computer's memory. The simplest form is "switches" which are either off or on. Programmers represent these as 0 and 1 (called 'bits'), respectively.
 
 ### Base 10 ###
 Binary, or Base 2, is simply another way to write numbers. In everyday life, we use Base 10. We have the Ones place, the Tens place, the Hundreds place, and so on. More technically, each digit is multiplied by ``10 ** n``, where ``n`` represents the distance from the right, starting from 0. (In AutoHotkey, ``**`` represents exponents or "powers"). Thus, the number 647 in Base 10 is equivalent to ``(6 * 100) + (4 * 10) + (7 * 1)``, or ``(6 * 10**2) + (4 * 10**1) + (7 * 10**0)`` in binary. (Yes, ``10**0`` is 1, and this is no place to discuss why.)
@@ -15,8 +14,10 @@ Binary, or Base 2, is simply another way to write numbers. In everyday life, we 
 Base 2 (Binary) works exactly the same way. Each digit is multiplied by ``2 ** n``, where *n* is the distance from the right, starting at 0. Thus, the number 1101001 in binary is equivalent to ``(1 * 64) + (1 * 32) + (0 * 16) + (1 * 8) + (0 * 4) + (0 * 2) + (1 * 1)``. In base 10, that is 105.
 
 ### Bits ###
+Integers are stored in a computer as *bits*.
 A *bit* is a binary digit. It is the simplest way to represent data: on or off,
-1 or 0, true or false. All integers can be represented as Binary in Bits.
+1 or 0, true or false. All integers can be represented as Binary in bits, if there are a sufficient number of them.
+Put several bits together and you have a number in Base 2.
 You might see terms such as "32-bit integer" or "64-bit integers" when dealing
 with binary. These refer to the number of bits (digits) used to store the number.
 Naturally, the more bits used, the higher the integer that can be stored.
